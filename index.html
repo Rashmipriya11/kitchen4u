@@ -413,14 +413,14 @@
 			Order</h3>
 			 <div class="arrows-reserve"><img src="images/border.png" alt="border"></div>
 				<div class="book-reservation wow slideInUp" data-wow-duration="1s" data-wow-delay=".5s">
-					<form action="test.php">
+					<form name="contactform" method="post" action="test.php">
 					 <div class="col-md-4 form-left">
 						<label><i class="glyphicon icon-calendar"></i> Date :</label>
-						<input type="date">
+						<input type="date" name="date" id="date">
 						</div>
 						<div class="col-md-4 form-left">
 							<label><i class="glyphicon icon-user"></i> No.of People :</label>
-							<select class="options form-control">
+							<select class="options form-control" name="options" id="options">
 								<option>25 to 50 people</option>
 								<option>50 to 100 people</option>
 								<option>100 to 250 people</option>
@@ -431,7 +431,7 @@
 						</div>
 						<div class="col-md-4 form-right">
 							<label><i class="glyphicon icon-clock3"></i> Time :</label>
-							<input type="time">
+							<input type="time" name="time" id="time">
 						</div>
 						<div class="clearfix"> </div>
 						<div class="make wow shake" data-wow-duration="1s" data-wow-delay=".5s">
