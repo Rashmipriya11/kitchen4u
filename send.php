@@ -1,7 +1,10 @@
 <?php 
     $errors = '';
-    $myemail = 'munisanathreddy@gmail.com';//<-----Put Your email address here.
-    if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['message'])) 
+    $myemail = 'aluruakash@gmail.com';//<-----Put Your email address here.
+    if(empty($_POST['name']) || 
+        empty($_POST['email']) || 
+        empty($_POST['phone']) || 
+        empty($_POST['message'])) 
     {
         $errors .= "\n Error: all fields are required";
     }
@@ -29,9 +32,9 @@
 
     mail($to,$email_subject,$email_body,$headers);
     //redirect to the 'thank you' page
-    // header('Location: contact-form-thank-you.html');
+    header('Location: contact-form-thank-you.html');
 
-    echo "Thank You!";
+    // echo "Thank You!";
     
 ?>
 <!-- This page is displayed only if there is some error -->

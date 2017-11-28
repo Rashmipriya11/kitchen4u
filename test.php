@@ -1,9 +1,9 @@
 <?php 
 $errors = '';
-$myemail = 'munisanathreddy@gmail.com';//<-----Put Your email address here.
+$myemail = 'aluruakash@gmail.com';//<-----Put Your email address here.
 if(empty($_POST['date'])  || 
-   empty($_POST['options']) || 
-   empty($_POST['time']))
+   empty($_POST['options']) ||  
+   empty($_POST['time'])) 
 {
     $errors .= "\n Error: all fields are required";
 }
@@ -24,7 +24,8 @@ if( empty($errors))
     $to = $myemail; 
     $email_subject = "Contact form submission: $name";
     $email_body = "You have received a new message. /n".
-    " Here are the details:\n date: $date \n options: $options \n time: $time";
+    " Here are the details:\n Date: $date \n Options : $options
+    \n Time: $time ";
 }
 
     $headers = "From: $myemail\n"; 
